@@ -1,0 +1,34 @@
+/* Regla al principio: 2 selectores (body p) -> Especificidad de 2 puntos */
+body p {
+  color: green;
+}
+
+body {
+  background-color: black;
+  color: white;
+  font-family: Verdana;
+}
+
+h1 {
+  font-family: Arial;
+}
+
+a {
+  /* Modificador !important en la regla del enlace */
+  color: white !important;
+}
+
+div {
+  margin-top: 10px;
+  margin-left: 20px;
+}
+
+/* Selector directo de etiqueta -> Especificidad de 1 punto */
+p {
+  color: blue;
+}
+
+/* Regla al final: se aplica al final por la Cascada */
+body {
+  color: red;
+}
